@@ -122,7 +122,7 @@
         
         <meta name="select:Logo Text" content="uppercase" Title="Uppercase"/><meta name="select:Logo Text" content="normal" Title="Normal"/><meta name="select:Logo Text" content="lowercase" Title="Lowercase"/>
         
-        <meta name="select:Navigation Text" content="lowercase" Title="Lowercase"/><meta name="select:Navigation Text" content="normal" Title="Normal"/><meta name="select:Navigation Text" content="uppercase" Title="Uppercase"/>
+        <meta name="select:Navigation Text" content="normal" Title="Normal"/><meta name="select:Navigation Text" content="lowercase" Title="Lowercase"/><meta name="select:Navigation Text" content="uppercase" Title="Uppercase"/>
 
     {/block:Hidden}
 
@@ -1480,9 +1480,9 @@
                         var reblogSvg = $(this).find('svg.dual-reblog');
                         $(this).find("a.reblog_button").append(reblogSvg);
                     });
-                    {block:IfSoundcloudURL}
+                    {block:IfSoundcloudWidgetURL}
                         $.fuseSC({block:IfSoundcloudWidgetAutoplay}true{/block:IfSoundcloudWidgetAutoplay}{block:IfNotSoundcloudWidgetAutoplay}false{/block:IfNotSoundcloudWidgetAutoplay},{block:IfSoundcloudWidgetShuffle}true{/block:IfSoundcloudWidgetShuffle}{block:IfNotSoundcloudWidgetShuffle}false{/block:IfNotSoundcloudWidgetShuffle});
-                    {/block:IfSoundcloudURL}
+                    {/block:IfSoundcloudWidgetURL}
                 });
                 
                 $antsIsoCont = $('#fuse-ants');
